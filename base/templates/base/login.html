@@ -1,0 +1,105 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %}
+Login Page
+{% endblock title %}
+
+{% block content %}
+
+{% if messages %}
+<ul style="padding: 20px;
+background: linear-gradient(to right, #ff105f, #ffad06);
+color: white;">
+    {% for message in messages %}
+    <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+        {% endfor %}
+</ul>
+{% endif %}
+
+ <!-- start page-title -->
+ <section class="page-title">
+    <div class="container">
+        <div class="row">
+            <div class="col col-xs-12">
+                <h2>Login</h2>
+            </div>
+        </div> <!-- end row -->
+    </div> <!-- end container -->
+</section>        
+<!-- end page-title -->
+
+
+<!-- start contact-pg-section -->
+<section class="contact-pg-section section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col col-lg-5 col-md-6 col-sm-8">
+                <div class="section-title">
+                    <span>Login and registration</span>
+                    <h2>Login</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-md-7">
+                <form method="POST" action="/login/">
+                    {% csrf_token %}
+                    <div>
+                        <input type="text" class="form-control" name="username" id="username" placeholder="Username*">
+                    </div>
+                    <div>
+                        <input type="password" class="form-control" name="password" id="password" placeholder="Password*">
+                    </div>
+                    <div>
+                        <button type="submit" class="theme-btn">Login</button>  
+                    </div>
+                    <span>If not register then first <a href="/register">register</a> </span>
+                </form>
+            </div>                    
+        </div>
+    </div> <!-- end container -->
+</section>
+<!-- end contact-pg-section -->
+
+
+<!--  start contact-map -->
+{% comment %} <section class="contact-map-section">
+    <h2 class="hidden">Contact map</h2>
+    <div class="contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.9147703055!2d-74.11976314309273!3d40.69740344223377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbd!4v1547528325671" allowfullscreen></iframe>
+    </div>
+</section> {% endcomment %}
+<!-- end contact-map -->
+
+
+<!-- start cta-section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="row">
+            <div class="col col-lg-6 col-md-6">
+                <div class="cta-text">
+                    <h3>Lets Get in Touch!</h3>
+                    <p>Video conferencing is an online technology that allows users in different locations to hold face-to-face meetings without having to move to a single location together.</p>
+                </div>
+            </div>
+            <div class="col col-lg-5 col-lg-offset-1 col-md-6">
+                <div class="contact-info">
+                    <div>
+                        <i class="fi flaticon-call"></i>
+                        <h4>Call us</h4>
+                        <p>+918887624847</p>
+                    </div>
+                    <div>
+                        <i class="fi flaticon-contact"></i>
+                        <h4>Email us</h4>
+                        <p>jaypr202@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end container -->
+</section>
+<!-- end cta-section -->
+{% endblock content %}
+
+
