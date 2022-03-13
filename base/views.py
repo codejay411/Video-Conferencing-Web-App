@@ -47,13 +47,13 @@ def lobby(request):
     if request.session.has_key('username'):
         return render(request, 'base/lobby.html')
     else:
-        return redirect("/login")
+        return redirect("/lobby")
 
 def room(request):
     if request.session.has_key('username'):
         return render(request, 'base/room.html')
     else:
-        return redirect("/login")
+        return redirect("/room")
 
 
 @csrf_exempt
