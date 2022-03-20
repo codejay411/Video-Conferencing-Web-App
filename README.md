@@ -11,7 +11,7 @@ way.
 ### LLD Document (Low level Document) [LLD File](https://drive.google.com/file/d/1PqvuLy4Z8SC3O980Kdjesg-zhcVSdc7t/view?usp=sharing) 
 ### DPR Document (Detailed project Report) [DPR File](https://drive.google.com/file/d/1xonfVz8s1DxPhmqvidnDJ0m0_1PCBi8O/view?usp=sharing) 
 ### Wireframe Document [Wireframe](https://drive.google.com/file/d/1k5m57bjB69r7d1_cuXeqRb_OPgLk5AIB/view?usp=sharing) 
-<br>
+
 ### Linkedin post link [Linkedin post](https://www.linkedin.com/posts/jayprakashbind_python-datascience-machinelearning-activity-6911237314841104384-J7bm?utm_source=linkedin_share&utm_medium=member_desktop_web) 
 
 ### Demo video [Demo video link](https://drive.google.com/file/d/1RUYTaSgIQRBX1u6nSa7buyg4UXfOi4QX/view?usp=sharing) 
