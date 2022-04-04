@@ -1,4 +1,4 @@
-# jay-prakash
+# Video Conferencing Web App
 
 Recent trends are doing online meeting by video conferencing. Movement from
 one place to another place for meeting in short time are very serious problems for
